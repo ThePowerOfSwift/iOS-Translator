@@ -14,6 +14,14 @@
 		014AC67E1DFE18B5005DC1EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014AC67C1DFE18B5005DC1EC /* LaunchScreen.storyboard */; };
 		014AC6891DFE18B5005DC1EC /* WatsonTranslationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014AC6881DFE18B5005DC1EC /* WatsonTranslationTests.swift */; };
 		014AC6941DFE18B5005DC1EC /* WatsonTranslationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014AC6931DFE18B5005DC1EC /* WatsonTranslationUITests.swift */; };
+		014AC6CC1DFE4B5B005DC1EC /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014AC6C81DFE4B5B005DC1EC /* LanguageTranslatorV2.framework */; };
+		014AC6CD1DFE4B5B005DC1EC /* LanguageTranslatorV2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 014AC6C81DFE4B5B005DC1EC /* LanguageTranslatorV2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		014AC6CE1DFE4B5B005DC1EC /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014AC6C91DFE4B5B005DC1EC /* RestKit.framework */; };
+		014AC6CF1DFE4B5B005DC1EC /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 014AC6C91DFE4B5B005DC1EC /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		014AC6D01DFE4B5B005DC1EC /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014AC6CA1DFE4B5B005DC1EC /* SpeechToTextV1.framework */; };
+		014AC6D11DFE4B5B005DC1EC /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 014AC6CA1DFE4B5B005DC1EC /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		014AC6D21DFE4B5B005DC1EC /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014AC6CB1DFE4B5B005DC1EC /* TextToSpeechV1.framework */; };
+		014AC6D31DFE4B5B005DC1EC /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 014AC6CB1DFE4B5B005DC1EC /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +41,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		014AC6BE1DFE47F9005DC1EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				014AC6CD1DFE4B5B005DC1EC /* LanguageTranslatorV2.framework in Embed Frameworks */,
+				014AC6CF1DFE4B5B005DC1EC /* RestKit.framework in Embed Frameworks */,
+				014AC6D11DFE4B5B005DC1EC /* SpeechToTextV1.framework in Embed Frameworks */,
+				014AC6D31DFE4B5B005DC1EC /* TextToSpeechV1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		014AC6701DFE18B5005DC1EC /* WatsonTranslation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonTranslation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		014AC6731DFE18B5005DC1EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +72,14 @@
 		014AC68F1DFE18B5005DC1EC /* WatsonTranslationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatsonTranslationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		014AC6931DFE18B5005DC1EC /* WatsonTranslationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonTranslationUITests.swift; sourceTree = "<group>"; };
 		014AC6951DFE18B5005DC1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		014AC6C01DFE4818005DC1EC /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = "<group>"; };
+		014AC6C11DFE4818005DC1EC /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		014AC6C21DFE4818005DC1EC /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		014AC6C31DFE4818005DC1EC /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		014AC6C81DFE4B5B005DC1EC /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = "<group>"; };
+		014AC6C91DFE4B5B005DC1EC /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		014AC6CA1DFE4B5B005DC1EC /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		014AC6CB1DFE4B5B005DC1EC /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014AC6CC1DFE4B5B005DC1EC /* LanguageTranslatorV2.framework in Frameworks */,
+				014AC6CE1DFE4B5B005DC1EC /* RestKit.framework in Frameworks */,
+				014AC6D01DFE4B5B005DC1EC /* SpeechToTextV1.framework in Frameworks */,
+				014AC6D21DFE4B5B005DC1EC /* TextToSpeechV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +114,15 @@
 		014AC6671DFE18B5005DC1EC = {
 			isa = PBXGroup;
 			children = (
+				014AC6C81DFE4B5B005DC1EC /* LanguageTranslatorV2.framework */,
+				014AC6C91DFE4B5B005DC1EC /* RestKit.framework */,
+				014AC6CA1DFE4B5B005DC1EC /* SpeechToTextV1.framework */,
+				014AC6CB1DFE4B5B005DC1EC /* TextToSpeechV1.framework */,
 				014AC6721DFE18B5005DC1EC /* WatsonTranslation */,
 				014AC6871DFE18B5005DC1EC /* WatsonTranslationTests */,
 				014AC6921DFE18B5005DC1EC /* WatsonTranslationUITests */,
 				014AC6711DFE18B5005DC1EC /* Products */,
+				014AC6BF1DFE4818005DC1EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +167,17 @@
 			path = WatsonTranslationUITests;
 			sourceTree = "<group>";
 		};
+		014AC6BF1DFE4818005DC1EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				014AC6C01DFE4818005DC1EC /* LanguageTranslatorV2.framework */,
+				014AC6C11DFE4818005DC1EC /* RestKit.framework */,
+				014AC6C21DFE4818005DC1EC /* SpeechToTextV1.framework */,
+				014AC6C31DFE4818005DC1EC /* TextToSpeechV1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +188,7 @@
 				014AC66C1DFE18B5005DC1EC /* Sources */,
 				014AC66D1DFE18B5005DC1EC /* Frameworks */,
 				014AC66E1DFE18B5005DC1EC /* Resources */,
+				014AC6BE1DFE47F9005DC1EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -412,6 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WatsonTranslation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonTranslation;
@@ -424,6 +482,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WatsonTranslation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonTranslation;
@@ -505,6 +567,7 @@
 				014AC69A1DFE18B5005DC1EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		014AC69B1DFE18B5005DC1EC /* Build configuration list for PBXNativeTarget "WatsonTranslationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +576,7 @@
 				014AC69D1DFE18B5005DC1EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		014AC69E1DFE18B5005DC1EC /* Build configuration list for PBXNativeTarget "WatsonTranslationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +585,7 @@
 				014AC6A01DFE18B5005DC1EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
